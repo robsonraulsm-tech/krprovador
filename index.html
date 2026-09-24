@@ -11,45 +11,63 @@
 
 <header>
   <h1>Política de Privacidade</h1>
-  <p class="sub">KR Provador. Última atualização: 22 de setembro de 2026.</p>
+  <p class="sub">KR Provador. Última atualização: 24 de setembro de 2026.</p>
   <a class="idioma" href="suporte.html">Suporte</a> &nbsp;·&nbsp;
   <a class="idioma" href="en.html">Read in English</a>
 </header>
 
 <div class="resumo">
-  <p><strong>Resumo em uma frase:</strong> tudo que você cadastra fica guardado dentro do seu iPhone ou iPad, e nada é enviado para servidores nossos. As únicas imagens que saem do aparelho são as que você escolhe enviar para a inteligência artificial, no momento em que toca em Vestir com IA.</p>
+  <p><strong>Resumo:</strong> o guarda-roupa, as fotos e os looks ficam no seu iPhone. Só quando você toca em Vestir com IA as fotos daquele look passam pelo servidor do KR Provador e seguem para a IA Gemini, do Google, que desenha a roupa em você. O servidor não guarda nenhuma foto. Ele guarda só a conta das gerações que você fez e dos créditos que comprou.</p>
 </div>
 
 <h2>Quem é o responsável</h2>
 <p>O KR Provador é desenvolvido e mantido por Robson Raul, pessoa física. Para qualquer dúvida sobre esta política ou sobre seus dados, escreva para <a href="mailto:krprovador@gmail.com">krprovador@gmail.com</a>.</p>
 
-<h2>O que fica guardado no seu aparelho</h2>
-<p>O aplicativo salva as informações abaixo na área reservada dele no seu dispositivo. Elas não passam por nenhum servidor nosso, porque nós não temos servidor:</p>
+<h2>O que fica só no seu aparelho</h2>
+<p>O aplicativo salva estas informações na área reservada dele no seu iPhone:</p>
 <ul>
   <li>As fotos das suas roupas, calçados e acessórios.</li>
-  <li>As suas fotos de corpo inteiro, incluindo as fotos com pose que você adicionar.</li>
-  <li>As imagens geradas pela inteligência artificial.</li>
-  <li>Os dados que você preenche em Meus dados: gênero, idade, altura, peso e tipo de silhueta.</li>
+  <li>As suas fotos de corpo inteiro, incluindo as fotos com pose.</li>
+  <li>As imagens geradas pela IA.</li>
+  <li>O que você preenche em Meus dados: gênero, idade, altura, peso e tipo de silhueta.</li>
   <li>Os looks que você monta, com nome, data, observações e correções.</li>
-  <li>A chave de API que você cadastra em Ajustes.</li>
 </ul>
 <p>Nós não temos acesso a nada disso. Não conseguimos ver, copiar nem recuperar o conteúdo do seu aparelho.</p>
 
-<h2>O que é enviado para a inteligência artificial</h2>
-<p>A prova virtual funciona com a API de imagem do Google Gemini. O envio acontece só quando você toca em <strong>Vestir com IA</strong>, nunca em segundo plano e nunca sem a sua ação.</p>
-<p>Nesse momento, saem do seu aparelho e vão direto para o Google:</p>
+<h2>O que sai do aparelho, e quando</h2>
+<p>Só quando você toca em <strong>Vestir com IA</strong>, e só depois de aceitar o aviso que aparece na primeira vez. Nunca em segundo plano. Nesse momento o app envia:</p>
 <ul>
   <li>A foto de corpo que você escolheu como base.</li>
   <li>Um recorte ampliado do seu rosto, tirado dessa mesma foto, para a IA manter a sua identidade.</li>
-  <li>As fotos das peças do look.</li>
-  <li>Quando ativado em Ajustes, uma foto neutra sua usada como referência de medidas.</li>
-  <li>Um texto com os dados do seu perfil, a pose escolhida, as correções marcadas e as observações que você escreveu.</li>
+  <li>As fotos das peças do look, com o nome e a cor que você deu a cada uma.</li>
+  <li>A sua foto neutra de medidas, quando a base é uma foto com pose e essa opção está ligada em Ajustes.</li>
+  <li>O que estiver preenchido em Meus dados.</li>
+  <li>A pose escolhida, as correções marcadas e a observação que você escreveu para a IA.</li>
 </ul>
-<p>A conexão vai do seu aparelho para o Google, sem passar por nós. Nós não recebemos cópia dessas imagens e não sabemos quando ou quantas vezes você usa a função.</p>
-<p>O tratamento que o Google dá a esse conteúdo é regido pelos termos e pela política de privacidade do Google, que variam conforme o tipo de chave e de plano que você usa. Recomendamos a leitura dos termos do Google antes de enviar fotos pessoais. Você encontra tudo em <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">ai.google.dev/gemini-api/terms</a>.</p>
+<p>Você pode desligar essa permissão em Ajustes. Desligada, o app pede o seu sim de novo antes de mandar qualquer foto.</p>
 
-<h2>Sobre a sua chave de API</h2>
-<p>A chave que você cria no Google AI Studio é sua, é cadastrada por você e fica guardada apenas no seu aparelho. Ela é usada só para autenticar os pedidos que o app faz ao Google em seu nome. Nós nunca vemos essa chave, e ela não é enviada para nenhum outro destino.</p>
+<h2>Por onde essas informações passam</h2>
+<p>O pedido sai do app e vai para o servidor do KR Provador, que roda na Cloudflare. O servidor confere se você tem assinatura ou crédito, repassa o pedido para a Gemini API do Google e devolve a imagem pronta para o app. As fotos ficam na memória do servidor só durante esse repasse e não são gravadas.</p>
+<p>Usamos o plano pago da Gemini API. Nesse plano:</p>
+<ul>
+  <li>O Google não usa suas fotos nem seus textos para treinar ou melhorar os produtos dele.</li>
+  <li>O Google guarda os pedidos e as respostas por até 55 dias, só para detectar abuso e cumprir exigências legais. Se o sistema dele marcar um pedido como suspeito, funcionários autorizados do Google podem revisar esse conteúdo.</li>
+</ul>
+<p>Os detalhes estão nos <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">termos da Gemini API</a> e na <a href="https://ai.google.dev/gemini-api/docs/usage-policies" target="_blank" rel="noopener">política de uso da Gemini API</a>. O tráfego passa pela rede da Cloudflare, que segue a <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">política de privacidade da Cloudflare</a>.</p>
+
+<h2>O que o servidor guarda</h2>
+<p>Para contar o seu saldo, impedir que uma compra seja usada duas vezes e devolver a geração que falhou, o servidor guarda:</p>
+<ul>
+  <li>O número que a Apple dá à sua assinatura. É o mesmo em todos os aparelhos da mesma conta Apple, e é por ele que o servidor sabe de quem é o saldo.</li>
+  <li>A situação da assinatura, que o servidor consulta na Apple: se está ativa, se está no teste grátis, a data de início e a de vencimento.</li>
+  <li>Os créditos comprados: qual pacote, quantas gerações, a data, o número da transação na Apple e se houve reembolso.</li>
+  <li>Cada geração: data e hora, se usou a cota do mês ou um crédito, e se deu certo ou foi devolvida.</li>
+</ul>
+<p>O servidor não guarda fotos, textos, nome, e-mail, telefone, endereço de IP nem identificador do aparelho.</p>
+<p>Esse registro fica guardado enquanto existir assinatura ou saldo de crédito, porque crédito pago não vence. Você pode pedir para apagar quando quiser, como explicado mais abaixo.</p>
+
+<h2>Compras</h2>
+<p>A assinatura e os créditos são comprados dentro da App Store e processados pela Apple. Nós não recebemos, não vemos e não guardamos o número do seu cartão nem seus dados de pagamento. A Apple informa ao servidor o que foi comprado e quando, e avisa sobre renovação, cancelamento e reembolso.</p>
 
 <h2>O que o aplicativo não faz</h2>
 <ul>
@@ -61,21 +79,23 @@
 </ul>
 <p>O acesso à câmera e à galeria é pedido apenas para você escolher as fotos que quer cadastrar, e o app lê somente as imagens que você selecionar.</p>
 
-<h2>Assinatura e pagamento</h2>
-<p>Se o aplicativo oferecer uma assinatura, a compra é processada inteiramente pela Apple, dentro do sistema de compras da App Store. Nós não recebemos, não vemos e não armazenamos o número do seu cartão nem seus dados de pagamento. A Apple nos informa apenas se a sua assinatura está ativa.</p>
-
 <h2>Backup e transferência</h2>
 <p>A função de exportar gera um arquivo com o seu guarda-roupa, que fica sob o seu controle. Você decide para onde ele vai, seja por AirDrop, seja salvo no app Arquivos. Esse arquivo não é enviado para nós nem para nenhum serviço de nuvem por conta do aplicativo.</p>
 
-<h2>Por quanto tempo os dados ficam guardados</h2>
-<p>Enquanto você quiser. Nada tem prazo de expiração. Você pode apagar peças, fotos e looks um a um, usar o botão Apagar tudo em Ajustes, ou simplesmente desinstalar o aplicativo. Ao desinstalar, o iOS remove toda a pasta do app e o conteúdo desaparece do aparelho de forma definitiva. Se você não tiver feito um backup antes, não há como recuperar, nem por nós.</p>
+<h2 id="idade">Idade mínima: 18 anos</h2>
+<p>O KR Provador é só para maiores de 18 anos. É uma exigência dos termos da Gemini API do Google, que não pode ser usada por menores de idade nem em apps voltados a eles ou que eles provavelmente vão usar. Se você souber de alguém menor de 18 anos usando o app, escreva para nós e apagamos o registro ligado à compra.</p>
+
+<h2 id="apagar">Por quanto tempo os dados ficam guardados e como apagar</h2>
+<p><strong>No aparelho:</strong> enquanto você quiser. Você pode apagar peças, fotos e looks um a um, usar o botão Apagar tudo em Ajustes ou desinstalar o aplicativo. Ao desinstalar, o iOS remove toda a pasta do app. Se você não tiver feito um backup antes, não tem como recuperar, nem por nós.</p>
+<p><strong>No servidor:</strong> escreva para <a href="mailto:krprovador@gmail.com">krprovador@gmail.com</a> pedindo para apagar o registro de uso. Mande junto o número do pedido que aparece no e-mail de recibo da Apple, para a gente achar o registro certo. Apagamos em até 15 dias. Apagar o registro zera o saldo de créditos, e se a assinatura continuar ativa, um registro novo começa na próxima geração.</p>
+<p><strong>No Google:</strong> os pedidos somem sozinhos em até 55 dias.</p>
 
 <h2>Seus direitos</h2>
 <p>A Lei Geral de Proteção de Dados no Brasil e o Regulamento Geral de Proteção de Dados na União Europeia garantem a você direitos de acesso, correção, exclusão e portabilidade dos seus dados.</p>
-<p>Na prática, aqui esses direitos já estão nas suas mãos: os dados estão no seu aparelho, você vê todos eles pela interface do app, edita o que quiser, exporta em um arquivo e apaga quando decidir. Como não guardamos cópia de nada, não há pedido a fazer para nós. Ainda assim, se tiver qualquer dúvida sobre o assunto, escreva para o e-mail no fim desta página.</p>
+<p>O que está no aparelho você controla pela interface do app: vê, edita, exporta e apaga. Para o registro do servidor, peça por e-mail uma cópia ou a exclusão, e respondemos em até 15 dias. Você também pode reclamar à ANPD, no Brasil, ou à autoridade de proteção de dados do seu país na União Europeia, que na França é a CNIL.</p>
 
-<h2>Crianças</h2>
-<p>O aplicativo não é direcionado a crianças e não coleta intencionalmente dados de menores de 13 anos.</p>
+<h2>Termos de uso</h2>
+<p>O uso do KR Provador segue o <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">contrato de licença padrão da Apple</a> para apps da App Store.</p>
 
 <h2>Mudanças nesta política</h2>
 <p>Se algo mudar no funcionamento do aplicativo, esta página é atualizada e a data no topo muda junto. Alterações relevantes, como o envio de dados para um novo destino, serão avisadas dentro do próprio aplicativo antes de entrarem em vigor.</p>
@@ -84,7 +104,7 @@
 <p>Dúvidas sobre privacidade, pedidos ou reclamações: <a href="mailto:krprovador@gmail.com">krprovador@gmail.com</a>.</p>
 
 <footer>
-  KR Provador. Documento publicado em 22 de setembro de 2026.
+  KR Provador. Primeira versão publicada em 22 de setembro de 2026, atualizada em 24 de setembro de 2026.
 </footer>
 
 </main>
