@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode d'emploi | KR Provador</title>
+<meta name="description" content="Comment utiliser KR Provador, étape par étape et en images&nbsp;: garde-robe, photos du corps, looks, essayage avec l'IA, abonnement et sauvegarde.">
+<link rel="stylesheet" href="estilo.css">
+<style>
+  /* Partes só do manual. O resto vem de estilo.css. */
+  :root {
+    --moldura: #1c1c1e;
+    --sombra: rgba(0, 0, 0, 0.14);
+    --aviso-fundo: #fff6e3;
+    --aviso-borda: #e9b949;
+    --no-numero: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --moldura: #3a3a42;
+      --sombra: rgba(0, 0, 0, 0.5);
+      --aviso-fundo: #2a2416;
+      --aviso-borda: #8f7230;
+      --no-numero: #141418;
+    }
+  }
+  html { scroll-behavior: smooth; }
+  h2, h3, h4 { scroll-margin-top: 16px; }
+
+  .sumario {
+    background: var(--caixa); border-radius: 12px;
+    padding: 14px 18px 8px; margin: 26px 0;
+  }
+  .sumario p { margin: 0 0 6px; font-size: 15px; color: var(--suave); }
+  .sumario ol { margin: 0; padding-left: 22px; }
+  .sumario li { margin-bottom: 3px; line-height: 1.5; break-inside: avoid; }
+  @media (min-width: 560px) { .sumario ol { columns: 2; column-gap: 34px; } }
+
+  .inicio {
+    border: 1px solid var(--linha); border-top: 3px solid var(--destaque);
+    border-radius: 12px; padding: 16px 18px 6px; margin: 26px 0 10px;
+  }
+  .inicio h2 { margin: 0 0 8px; padding: 0; border: 0; font-size: 19px; }
+  .inicio ol { padding-left: 22px; margin: 0 0 12px; }
+  .inicio .obs { font-size: 15px; color: var(--suave); }
+
+  h3.tema { font-size: 18px; color: var(--destaque); margin: 30px 0 4px; }
+
+  .passo { margin: 20px 0 8px; }
+  .passo h4 {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 17px; line-height: 1.35; margin: 0 0 4px;
+  }
+  .passo h4 .num {
+    flex: 0 0 26px; height: 26px; border-radius: 50%;
+    background: var(--destaque); color: var(--no-numero);
+    font-size: 14px; line-height: 26px; text-align: center;
+  }
+  .passo p { margin: 0 0 8px 36px; }
+
+  figure.tela { max-width: 280px; margin: 16px auto 28px; }
+  figure.tela img {
+    display: block; width: 100%; height: auto;
+    border: 6px solid var(--moldura); border-radius: 34px;
+    box-shadow: 0 8px 24px var(--sombra); background: #fff;
+  }
+  figure.tela figcaption {
+    margin-top: 10px; font-size: 14px; line-height: 1.45;
+    color: var(--suave); text-align: center;
+  }
+
+  .dicas {
+    background: var(--caixa); border-radius: 12px;
+    padding: 12px 18px 4px; margin: 18px 0 24px;
+  }
+  .dicas p { margin: 0 0 4px; font-weight: 600; }
+  .dicas ul { margin: 0 0 8px; }
+
+  .nota {
+    background: var(--aviso-fundo); border: 1px solid var(--aviso-borda);
+    border-radius: 12px; padding: 12px 16px; margin: 16px 0 22px;
+    font-size: 15px;
+  }
+  .nota p { margin: 0 0 6px; }
+  .nota p:last-child { margin-bottom: 0; }
+
+  ul.abas { list-style: none; padding-left: 0; }
+  ul.abas li { padding-left: 0; }
+
+  h3.pergunta { font-size: 17px; margin: 24px 0 4px; }
+  h3.pergunta + p { margin-top: 0; }
+
+  /* estilo.css tira a linha do primeiro h2 de main; aqui ele não é o primeiro da página. */
+  #abas { border-top: 1px solid var(--linha); padding-top: 18px; }
+</style>
+</head>
+<body>
+<main>
+
+
+<header>
+  <h1>Mode d'emploi</h1>
+  <p class="sub">KR Provador. Dernière mise à jour&nbsp;: 25 septembre 2026.</p>
+  <a class="idioma" href="manual.html" lang="pt-BR">Ler em português</a> &nbsp;·&nbsp;
+  <a class="idioma" href="support.html">Assistance (en anglais)</a> &nbsp;·&nbsp;
+  <a class="idioma" href="en.html">Politique de confidentialité (en anglais)</a>
+</header>
+
+<div class="resumo">
+  <p>KR Provador garde vos vêtements sur votre téléphone et vous montre comment ils vous vont. Vous photographiez vos pièces et votre corps, vous composez un look, et l'IA crée une image de vous portant ce look.</p>
+</div>
+
+<nav class="sumario" aria-label="Dans ce mode d'emploi">
+  <p>Dans ce mode d'emploi</p>
+  <ol>
+    <li><a href="#primeiros-passos">Premiers pas en 1 minute</a></li>
+    <li><a href="#abas">Les 4 onglets</a></li>
+    <li><a href="#guarda-roupa">Garde-robe</a></li>
+    <li><a href="#meu-corpo">Mon corps</a></li>
+    <li><a href="#looks">Looks</a></li>
+    <li><a href="#provador">Cabine d'essayage</a></li>
+    <li><a href="#assinatura">Abonnement et crédits</a></li>
+    <li><a href="#backup">Sauvegarde</a></li>
+    <li><a href="#dicas">Conseils pour de bonnes photos</a></li>
+    <li><a href="#problemas">Problèmes fréquents</a></li>
+    <li><a href="#privacidade">Confidentialité, en bref</a></li>
+    <li><a href="#contato">Contact</a></li>
+  </ol>
+</nav>
+
+<div class="inicio">
+  <h2 id="primeiros-passos">Premiers pas en 1 minute</h2>
+  <ol>
+    <li>Dans l'onglet <strong>Mon corps</strong>, touchez <strong>De face</strong>, ajoutez une photo de vous en pied et touchez <strong>Enregistrer</strong>.</li>
+    <li>Dans l'onglet <strong>Garde-robe</strong>, touchez <strong>+</strong> et ajoutez au moins deux pièces.</li>
+    <li>Dans l'onglet <strong>Looks</strong>, touchez <strong>+</strong>, choisissez les pièces et touchez <strong>Créer</strong>.</li>
+    <li>Touchez le look, puis <strong>Essayer avec l'IA</strong>.</li>
+  </ol>
+  <p class="obs">La première fois que vous utilisez l'appareil photo, l'iPhone vous demande l'autorisation. Acceptez, sinon l'appareil photo ne s'ouvre pas.</p>
+</div>
+
+<!-- ============ ABAS ============ -->
+<h2 id="abas">Les 4 onglets</h2>
+<p>La barre en bas de l'écran a 4 onglets. Il n'y a pas d'onglet pour la cabine d'essayage&nbsp;: elle s'ouvre quand vous touchez un look.</p>
+<ul class="abas">
+  <li><strong>Garde-robe</strong> (cintre)&nbsp;: vos vêtements.</li>
+  <li><strong>Mon corps</strong> (silhouette dans un cadre)&nbsp;: vos photos du corps et <strong>Mes infos</strong>.</li>
+  <li><strong>Looks</strong> (petites étoiles)&nbsp;: créer des looks, voir les suggestions et l'historique. C'est d'ici que s'ouvre la cabine d'essayage.</li>
+  <li><strong>Réglages</strong> (roue dentée)&nbsp;: abonnement, confidentialité et sauvegarde.</li>
+</ul>
+<figure class="tela">
+  <img src="manuel/01-guarda-roupa.jpg" width="600" height="1303" decoding="async" alt="Onglet Garde-robe avec cinq pièces en grille&nbsp;: sac, sandales plates, robe, pantalon large et blouse. Les sandales portent le point d'exclamation orange et la mention Sans photo de côté. En haut, le bouton + et les filtres Tout, Haut, Bas et Robe / combinaison. En bas de l'écran, les onglets Garde-robe, Mon corps, Looks et Réglages.">
+  <figcaption>L'onglet Garde-robe, avec les 4 onglets en bas de l'écran.</figcaption>
+</figure>
+
+<!-- ============ GUARDA-ROUPA ============ -->
+<h2 id="guarda-roupa">Garde-robe</h2>
+
+<h3 class="tema">Ajouter une pièce</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Ouvrez l'écran Nouvelle pièce</h4>
+  <p>Touchez <strong>+</strong>, en haut à droite. L'écran <strong>Nouvelle pièce</strong> s'ouvre.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Choisissez la catégorie et le nom</h4>
+  <p>Dans <strong>Catégorie</strong>, choisissez Haut, Bas, Robe / combinaison, Chaussures, Veste / manteau ou Accessoire. La catégorie détermine les deux photos que l'app vous demandera. Dans <strong>Nom (ex.&nbsp;: robe longue noire)</strong>, écrivez un nom facile à reconnaître.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Photographiez le devant</h4>
+  <p>Faites défiler jusqu'à <strong>De face</strong>. Touchez <strong>Appareil photo</strong> pour prendre la photo maintenant, ou <strong>Photos</strong> pour utiliser une photo que vous avez déjà. Dans <strong>Prise de vue</strong>, indiquez comment la pièce a été photographiée&nbsp;: <strong>À plat</strong>, <strong>Sur mannequin</strong>, <strong>Sur cintre</strong> ou <strong>Portée par quelqu'un</strong>.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">4</span>Attendez le détourage</h4>
+  <p>Attendez que le message <strong>Détourage de la pièce...</strong> disparaisse. L'app retire le fond toute seule et ne garde que le vêtement.</p>
+  <figure class="tela">
+    <img src="manuel/03-nova-peca-recorte.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Partie De face de l'écran Nouvelle pièce&nbsp;: la blouse terracotta déjà sans fond, les boutons Appareil photo et Photos, Prise de vue sur À plat, l'interrupteur Retirer le fond automatiquement activé et le bouton Gommer avec le doigt. En dessous commence la partie De dos, encore vide.">
+    <figcaption>La blouse est déjà sans fond. En dessous, la partie De dos attend la deuxième photo.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">5</span>Faites de même pour le dos</h4>
+  <p>Refaites tout dans la partie <strong>De dos</strong>. Sans photo de dos, l'IA invente ce qu'elle ne voit pas.</p>
+  <p>Pour les chaussures, l'app demande <strong>Du dessus, un peu de face</strong> et <strong>De côté</strong>. Pour un accessoire, <strong>De face</strong> et <strong>De côté ou ouvert</strong>.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">6</span>Vérifiez la couleur et l'occasion</h4>
+  <p>Remontez jusqu'à <strong>Couleur et occasion</strong>. L'app a déjà coché la couleur lue sur la photo. Si elle n'est pas bonne, touchez une autre pastille.</p>
+  <p>Activez <strong>Pièce imprimée</strong> si la pièce a un motif. Dans <strong>Quand la porter</strong>, choisissez <strong>Sport</strong>, <strong>Quotidien</strong>, <strong>Travail</strong> ou <strong>Soirée</strong>. L'app s'en sert pour vous suggérer des looks.</p>
+  <figure class="tela">
+    <img src="manuel/02-nova-peca-dados.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Haut de l'écran Nouvelle pièce&nbsp;: Catégorie sur Haut, le nom blouse terracotta et la partie Couleur et occasion avec la phrase L'app a lu la couleur sur la photo, la pastille Rouge cochée, l'interrupteur Pièce imprimée désactivé et Quand la porter sur Quotidien.">
+    <figcaption>L'app a coché Rouge. Si la couleur de votre pièce est plus proche d'une autre pastille, comme Marron, touchez-la.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">7</span>Enregistrez</h4>
+  <p>Touchez <strong>Enregistrer</strong>, en haut à droite. La pièce apparaît dans l'onglet <strong>Garde-robe</strong>.</p>
+</div>
+
+<h3 class="tema">Si le détourage n'est pas réussi</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Fond proche de la couleur du vêtement</h4>
+  <p>Si un message orange apparaît, comme «&nbsp;Vêtement clair sur fond clair&nbsp;», le mieux est de reprendre la photo sur un fond d'une couleur bien différente de celle de la pièce.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Le détourage a rogné une partie du vêtement</h4>
+  <p>Désactivez <strong>Retirer le fond automatiquement</strong>. Pour les photos <strong>Sur mannequin</strong> et <strong>Portée par quelqu'un</strong>, cet interrupteur est désactivé par défaut, car l'IA sait ignorer le mannequin et la personne.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Gommez les restes avec le doigt</h4>
+  <p>Touchez <strong>Gommer avec le doigt</strong> et passez le doigt sur ce qui n'est pas le vêtement&nbsp;: cintre, ombre ou morceau de mannequin.</p>
+  <figure class="tela">
+    <img src="manuel/04-apagar-partes.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Écran Gommer des zones&nbsp;: la blouse sur fond en damier, avec un bout de l'ourlet gommé au doigt. En haut, Annuler et Appliquer. En bas, Gommer et Déplacer, le curseur d'épaisseur et les boutons Zoom, Ajuster, Défaire et Effacer.">
+    <figcaption>Le damier montre ce qui a été gommé.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">4</span>Utilisez les outils de la gomme</h4>
+  <p>Le curseur règle l'épaisseur du trait. <strong>Zoom</strong> agrandit, <strong>Ajuster</strong> affiche de nouveau l'image entière, <strong>Déplacer</strong> fait glisser l'image, <strong>Défaire</strong> annule le dernier trait et <strong>Effacer</strong> les annule tous. Touchez <strong>Appliquer</strong> pour garder le résultat.</p>
+</div>
+
+<h3 class="tema">Voir et gérer vos pièces</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Affichez la pièce en plein écran</h4>
+  <p>Touchez une pièce. Elle s'ouvre en plein écran, côté face. En bas, <strong>De face</strong> et <strong>De dos</strong> permettent de passer d'un côté à l'autre. Écartez deux doigts pour agrandir.</p>
+  <figure class="tela">
+    <img src="manuel/05b-peca-tela-cheia.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="La blouse terracotta en plein écran sur fond noir, avec le bouton pour fermer et celui pour partager en haut. En bas, le bouton De face est sélectionné et le bouton De dos, à droite, se voit à peine.">
+    <figcaption>Le bouton de droite, De dos, montre l'autre côté. Il est très pâle, mais il fonctionne.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Retournez la pièce dans la grille</h4>
+  <p>Le petit bouton avec deux flèches en cercle, dans le coin de la carte, retourne la pièce sur place.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Repérez ce qui manque</h4>
+  <p>Un point d'exclamation orange signale qu'il manque la deuxième photo. Sur une blouse, on lit «&nbsp;Sans photo de dos&nbsp;». Sur des chaussures, «&nbsp;Sans photo de côté&nbsp;».</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">4</span>Ouvrez le menu de la pièce</h4>
+  <p>Touchez la pièce et gardez le doigt dessus. Le menu s'ouvre avec <strong>Modifier la pièce</strong>, <strong>Corriger le détourage de face</strong>, <strong>Corriger le détourage de dos</strong>, <strong>Ajouter aux favoris</strong> et <strong>Supprimer</strong>.</p>
+  <figure class="tela">
+    <img src="manuel/05-menu-da-peca.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Menu ouvert sur la blouse terracotta, avec les options Modifier la pièce, Corriger le détourage de face, Corriger le détourage de dos, Ajouter aux favoris et Supprimer.">
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">5</span>Modifiez au besoin</h4>
+  <p>Dans <strong>Modifier la pièce</strong>, vous changez les photos, ajoutez la photo qui manque et modifiez le nom, la catégorie et la couleur. <strong>Relire la couleur sur la photo</strong> relance la détection de la couleur. À la fin, touchez <strong>Enregistrer</strong>.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">6</span>Filtrez et mettez en favori</h4>
+  <p>Les boutons en haut de la grille, comme <strong>Tout</strong> et <strong>Haut</strong>, montrent une catégorie à la fois. Les pièces favorites apparaissent plus souvent dans les suggestions.</p>
+</div>
+
+<!-- ============ MEU CORPO ============ -->
+<h2 id="meu-corpo">Mon corps</h2>
+
+<h3 class="tema">Les 4 photos</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Ajoutez les photos</h4>
+  <p>L'onglet montre 4 cadres&nbsp;: <strong>De face</strong>, <strong>De dos</strong>, <strong>Profil gauche</strong> et <strong>Profil droit</strong>. Touchez un cadre, choisissez <strong>Appareil photo</strong> ou <strong>Photos</strong>, puis touchez <strong>Enregistrer</strong>.</p>
+  <figure class="tela">
+    <img src="manuel/06-meu-corpo.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Onglet Mon corps&nbsp;: en haut, la carte Mes infos avec le résumé Femme, 35 ans, 165 cm, 62 kg, Sablier. En dessous, le texte sur les 4 photos et les cadres De face, avec une photo, puis De dos, Profil gauche et Profil droit, encore vides.">
+    <figcaption>Ici, seul le cadre De face est rempli. Les trois autres gardent le signe +.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>La photo de face d'abord</h4>
+  <p>La photo <strong>De face</strong> est la plus importante&nbsp;: c'est celle que la cabine d'essayage choisit d'office comme base. Les autres servent à essayer de dos et de profil.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Changez ou retirez une photo</h4>
+  <p>Pour la changer, touchez le cadre et choisissez une autre photo. Pour la retirer, touchez <strong>Supprimer cette photo</strong>.</p>
+</div>
+
+<div class="dicas">
+  <p>Quelle photo fonctionne le mieux</p>
+  <ul>
+    <li>En pied, de la tête aux pieds, avec le visage bien visible.</li>
+    <li>Vêtements près du corps et clairs, debout, dans une posture naturelle.</li>
+    <li>Les 4 photos à la même distance et avec la même lumière.</li>
+    <li>Demandez à quelqu'un de prendre la photo. Ou utilisez le retardateur de l'app Appareil photo de l'iPhone, puis choisissez la photo avec <strong>Photos</strong>.</li>
+  </ul>
+</div>
+
+<h3 class="tema">Mes infos</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Indiquez vos mesures</h4>
+  <p>Touchez <strong>Mes infos</strong>, en haut de l'onglet <strong>Mon corps</strong>. Remplissez <strong>Genre (écrivez-le comme vous voulez)</strong>, <strong>Âge</strong>, <strong>Taille</strong> (en cm) et <strong>Poids</strong> (en kg). Rien n'est obligatoire.</p>
+  <figure class="tela">
+    <img src="manuel/07-meus-dados.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Écran Mes infos avec Femme, Âge 35, Taille 165 et Poids 62 remplis, le texte qui explique où vont ces infos et le dessin des types de silhouette&nbsp;: Sablier, Triangle, Rectangle, Triangle inversé et Ovale.">
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Choisissez la silhouette</h4>
+  <p>Dans <strong>Type de silhouette</strong>, touchez le dessin pour l'agrandir et cochez celle qui vous ressemble le plus&nbsp;: Sablier, Triangle, Rectangle, Triangle inversé ou Ovale. En cas de doute, laissez <strong>Je ne sais pas encore</strong>.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Enregistrez</h4>
+  <p>Touchez <strong>Enregistrer</strong>. Ces infos aident l'IA à respecter vos mesures.</p>
+</div>
+
+<h3 class="tema">Photos en pose</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Ajoutez une pose</h4>
+  <p>Plus bas dans l'onglet, dans <strong>Photos en pose</strong>, vous pouvez garder jusqu'à 4 photos de vous en situation, dans de vrais décors&nbsp;: assise, en train de marcher, en soirée. Touchez <strong>Ajouter une pose</strong> et choisissez la photo.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Donnez un nom et indiquez le côté</h4>
+  <p>Écrivez un nom, comme «&nbsp;Soirée&nbsp;». Dans <strong>Orientation</strong>, indiquez si vous êtes <strong>De face</strong>, <strong>De dos</strong> ou de profil. Touchez <strong>Enregistrer</strong>.</p>
+  <figure class="tela">
+    <img src="manuel/08-nova-pose.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Écran Nouvelle pose avec une photo en pied, les boutons Appareil photo et Photos, le texte d'aide, le nom Soirée et Orientation sur De face.">
+    <figcaption>Ici, nous avons utilisé la photo de studio uniquement pour montrer l'écran. Pour vos poses, choisissez une photo prise dans un vrai décor.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Ce que l'IA fait de la pose</h4>
+  <p>L'IA garde votre pose, votre visage et le décor, et ne change que les vêtements.</p>
+</div>
+
+<!-- ============ LOOKS ============ -->
+<h2 id="looks">Looks</h2>
+
+<h3 class="tema">Créer un look</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Ouvrez Créer un look</h4>
+  <p>Dans l'onglet <strong>Looks</strong>, touchez <strong>+</strong>, en haut à droite. Écrivez un nom dans <strong>Nom du look (ex.&nbsp;: dîner vendredi)</strong>.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Choisissez les pièces</h4>
+  <p>Touchez les pièces que vous voulez porter. La pièce choisie s'entoure d'une bordure de couleur. Touchez-la à nouveau pour la désélectionner.</p>
+  <figure class="tela">
+    <img src="manuel/10-montar-look.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Bas de l'écran Créer un look, avec les pièces rangées par catégorie. La blouse, le pantalon large, les sandales plates et le sac ont une bordure violette. La robe n'a pas de bordure. En haut, Annuler et Créer.">
+    <figcaption>Blouse, pantalon large, sandales plates et sac choisis. La robe reste de côté.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Créez</h4>
+  <p>Touchez <strong>Créer</strong>. Le look apparaît dans <strong>Mes looks</strong>.</p>
+</div>
+
+<h3 class="tema">Suggestions automatiques</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Demandez des suggestions</h4>
+  <p>Touchez <strong>Suggérer des looks</strong>. L'app associe vos pièces selon la couleur, le motif et l'occasion, et explique chaque association.</p>
+  <figure class="tela">
+    <img src="manuel/09-looks.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Onglet Looks. Dans Suggestions, deux cartes avec les pièces, la raison de l'association et le bouton Enregistrer le look, et le lien Effacer. Dans Mes looks, le lien Voir l'historique, un look Pas encore essayé et le look Dîner vendredi, Essayé avec l'IA, avec l'image générée. En bas, le bouton Suggérer d'autres looks.">
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Gardez celle qui vous plaît</h4>
+  <p>Touchez <strong>Enregistrer le look</strong>. Pour en voir d'autres, touchez <strong>Suggérer d'autres looks</strong>. <strong>Effacer</strong> cache les suggestions.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Les pièces dont l'app a besoin</h4>
+  <p>Pour proposer des looks, l'app a besoin d'au moins 2 pièces dans la garde-robe, avec un haut et un bas, ou une robe. Si les pièces ne vont pas ensemble, l'app ne suggère rien. Voir <a href="#problemas">Problèmes fréquents</a>.</p>
+</div>
+
+<h3 class="tema">Mes looks et historique</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Consultez les looks récents</h4>
+  <p>Dans <strong>Mes looks</strong>, vous voyez les 6 plus récents, avec <strong>Pas encore essayé</strong> ou <strong>Essayé avec l'IA</strong> en dessous. Touchez un look et gardez le doigt dessus pour <strong>Modifier le look</strong>, <strong>Ajouter aux favoris</strong> ou <strong>Supprimer le look</strong>.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Ouvrez l'historique</h4>
+  <p>Touchez <strong>Voir l'historique</strong>, ou l'horloge en haut à gauche. Les looks sont classés par jour. Filtrez par <strong>Tous</strong>, <strong>Favoris</strong> ou <strong>Essayés</strong>, ou utilisez la recherche <strong>Rechercher un look ou une pièce</strong>.</p>
+  <figure class="tela">
+    <img src="manuel/17-historico.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Écran Historique avec la recherche Rechercher un look ou une pièce, le filtre Tous, Favoris et Essayés, et le groupe Aujourd'hui avec deux looks. Le look Dîner vendredi a un cœur et la mention essayé.">
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Glissez pour plus d'options</h4>
+  <p>Dans l'historique, faites glisser un look vers la gauche pour le supprimer, ou vers la droite pour le modifier ou le mettre en favori.</p>
+</div>
+
+<!-- ============ PROVADOR ============ -->
+<h2 id="provador">Cabine d'essayage</h2>
+
+<h3 class="tema">Ouvrir et préparer</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Ouvrez le look</h4>
+  <p>Dans l'onglet <strong>Looks</strong>, touchez le look. La cabine d'essayage s'ouvre, avec le nom du look en haut.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Choisissez la photo de base</h4>
+  <p>Dans <strong>Photo utilisée comme base</strong>, touchez la photo sur laquelle l'IA va vous habiller. Ce peut être un des angles du corps ou une photo en pose. La photo choisie s'entoure d'une bordure de couleur.</p>
+  <figure class="tela">
+    <img src="manuel/11-provador-antes.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Cabine d'essayage du look Dîner vendredi&nbsp;: Photo utilisée comme base avec De face sélectionnée, les quatre pièces du look, Pose du résultat sur Telle quelle, Ajuster la demande fermé, le bouton Essayer avec l'IA et, juste en dessous, Il reste 20 générations ce mois-ci.">
+    <figcaption>Tout est prêt. Le solde s'affiche juste sous le bouton.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Vérifiez les pièces</h4>
+  <p>Juste en dessous, vous voyez les pièces du look. Pour les changer, touchez <strong>Modifier</strong> (le crayon), en haut à droite.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">4</span>Choisissez la pose</h4>
+  <p>Dans <strong>Pose du résultat</strong>, choisissez <strong>Telle quelle</strong>, <strong>En marche</strong>, <strong>Éditorial</strong> ou <strong>Décontractée</strong>. Une phrase en dessous explique chacune.</p>
+</div>
+
+<h3 class="tema">Première fois&nbsp;: votre accord</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Lisez ce qui est envoyé</h4>
+  <p>La première fois que vous touchez <strong>Essayer avec l'IA</strong>, l'écran <strong>Avant d'essayer avec l'IA</strong> s'ouvre. Il montre ce qui est envoyé et à qui. Cet écran revient chaque fois que l'autorisation est désactivée dans <strong>Réglages</strong>.</p>
+  <figure class="tela">
+    <img src="manuel/12-consentimento.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Écran Avant d'essayer avec l'IA avec la liste de ce qui est envoyé, l'interrupteur Les photos du corps sont bien de moi activé, les liens vers la politique de confidentialité et les conditions de Google, et les boutons J'accepte et je continue et Plus tard.">
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Donnez votre accord</h4>
+  <p>Activez <strong>Les photos du corps sont bien de moi</strong> et touchez <strong>J'accepte et je continue</strong>. La génération démarre toute seule. <strong>Plus tard</strong> ferme l'écran sans rien envoyer.</p>
+</div>
+
+<h3 class="tema">Essayer le look</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Touchez Essayer avec l'IA</h4>
+  <p>Le message «&nbsp;L'IA vous habille...&nbsp;» apparaît. Cela prend de 10 à 40 secondes.</p>
+  <figure class="tela">
+    <img src="manuel/13-gerando.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Cabine d'essayage avec le grand cadre vide et les messages L'IA vous habille... et Cela prend de 10 à 40 secondes.">
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Vérifiez le solde</h4>
+  <p>Sous le bouton, vous voyez votre solde&nbsp;: le nombre de générations qu'il vous reste ce mois-ci. Chaque essai en utilise une. En cas d'erreur, elle est recréditée sur votre solde.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Découvrez le résultat</h4>
+  <p>Le résultat apparaît dans le grand cadre. Touchez-le pour le voir en plein écran et écartez deux doigts pour agrandir.</p>
+  <figure class="tela">
+    <img src="manuel/14b-resultado-imagem.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Résultat de l'IA dans la cabine d'essayage&nbsp;: la femme de la photo de face porte la blouse terracotta, le pantalon large beige, les sandales plates caramel et le sac caramel à la main.">
+    <figcaption>La même personne que sur la photo de face, avec le look Dîner vendredi.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">4</span>Le résultat ne vous plaît pas&nbsp;? Générez à nouveau</h4>
+  <p>Après le premier résultat, le bouton devient <strong>Générer à nouveau</strong>. Chaque essai utilise 1 génération.</p>
+  <figure class="tela">
+    <img src="manuel/14-resultado.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Bas de la cabine d'essayage après la génération&nbsp;: la partie inférieure de la nouvelle image avec le bouton pour agrandir, le bouton Générer à nouveau, le solde Il reste 19 générations ce mois-ci et le bouton Partager.">
+  </figure>
+</div>
+
+<h3 class="tema">Corriger ce qui n'a pas fonctionné</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Cochez l'erreur</h4>
+  <p>Touchez <strong>Ajuster la demande</strong>. Dans la partie <strong>Qu'est-ce qui n'allait pas la dernière fois&nbsp;?</strong> cochez le ou les problèmes&nbsp;: <strong>Mon visage a changé</strong>, <strong>Mon corps a changé</strong>, <strong>Le mannequin apparaît</strong>, <strong>Mis à l'envers</strong>, <strong>Le décor a changé</strong>, <strong>La pièce a changé</strong>, <strong>Mauvaise longueur</strong> ou <strong>Mauvaise couleur</strong>.</p>
+  <figure class="tela">
+    <img src="manuel/15-ajustar-pedido.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Cabine d'essayage avec Pose du résultat sur Éditorial et Ajuster la demande ouvert avec le chiffre 1. Les 8 boutons de Qu'est-ce qui n'allait pas la dernière fois&nbsp;? s'affichent, avec Mauvaise longueur coché. Dans Remarques pour l'IA, on lit L'ourlet du pantalon tombe à la cheville. En bas, Effacer les ajustements et le bouton Générer à nouveau.">
+    <figcaption>Pose Éditorial, une correction cochée et une remarque écrite.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Écrivez à l'IA</h4>
+  <p>Dans <strong>Remarques pour l'IA</strong>, écrivez ce que vous voulez, en français, par exemple «&nbsp;l'ourlet du pantalon tombe à la cheville&nbsp;».</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Réessayez</h4>
+  <p>Touchez <strong>Générer à nouveau</strong>. Si vous avez quitté le look puis l'avez rouvert, le bouton s'appelle <strong>Essayer avec l'IA</strong>. Les corrections restent enregistrées dans ce look, et <strong>Effacer les ajustements</strong> les supprime toutes.</p>
+</div>
+
+<h3 class="tema">Garder et partager</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Enregistrez ou envoyez l'image</h4>
+  <p>Touchez <strong>Partager</strong>, sous le bouton. Pour la garder dans l'app Photos, choisissez <strong>Enregistrer l'image</strong>. La première fois, l'iPhone demande l'autorisation d'enregistrer dans Photos. Acceptez, sinon l'image n'est pas enregistrée. Pour l'envoyer, choisissez WhatsApp, Messages ou une autre app.</p>
+  <figure class="tela">
+    <img src="manuel/16-compartilhar.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Feuille de partage de l'iPhone ouverte sur la cabine d'essayage, avec la miniature du look Dîner vendredi et les options Copier, Enregistrer l'image, Assigner à un contact et d'autres encore.">
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Partagez un autre jour</h4>
+  <p>Vous revenez au look plus tard&nbsp;? Touchez l'image et utilisez le bouton de partage, en haut à droite du plein écran.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Enregistrez les images réussies avant d'en générer une autre</h4>
+  <p>Chaque look ne garde que le dernier résultat. Une nouvelle génération remplace la précédente, et changer les pièces du look efface le résultat. Enregistrez d'abord les images que vous voulez garder.</p>
+</div>
+
+<!-- ============ ASSINATURA ============ -->
+<h2 id="assinatura">Abonnement et crédits</h2>
+
+<h3 class="tema">Comment ça marche</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Ce qui est gratuit</h4>
+  <p>La garde-robe, les photos, les looks et les suggestions sont gratuits. Seule la fonction <strong>Essayer avec l'IA</strong> nécessite un abonnement. Sans abonnement, ce bouton est remplacé par <strong>S'abonner pour essayer</strong>.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>25 générations par mois</h4>
+  <p>L'abonnement est annuel, avec renouvellement automatique, et donne droit à 25 générations par mois. Les générations non utilisées ne sont pas reportées sur le mois suivant.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>7 jours gratuits</h4>
+  <p>Lors de votre premier abonnement, vous profitez de 7 jours gratuits avec 5 générations, grâce au bouton <strong>Commencer les 7 jours gratuits</strong>. C'est valable une seule fois par compte Apple. Après les 7 jours, l'abonnement annuel est facturé. Pour ne pas payer, résiliez au moins 24 heures avant la fin des 7 jours.</p>
+  <figure class="tela">
+    <img src="manuel/18-assinatura.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Écran d'abonnement Essayez avant de porter, avec les avantages, le prix par an masqué en gris, le bandeau 7 jours gratuits avec 5 générations, avec le prix masqué lui aussi, le bouton Commencer les 7 jours gratuits, Restaurer les achats, le texte sur le renouvellement et les liens Conditions d'utilisation et Politique de confidentialité.">
+    <figcaption>Sur cette image, le prix est masqué en gris. Dans l'app, il s'affiche à cet endroit, dans la devise de votre App Store.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">4</span>Abonnez-vous</h4>
+  <p>Dans <strong>Réglages</strong>, touchez <strong>S'abonner</strong>. Ou touchez <strong>S'abonner pour essayer</strong> dans la cabine d'essayage.</p>
+</div>
+
+<h3 class="tema">Crédits et compte</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Achetez plus de générations</h4>
+  <p>Vous n'avez plus de générations ce mois-ci&nbsp;? Dans <strong>Réglages</strong>, touchez <strong>Acheter des crédits</strong> et choisissez un pack de 10, 50 ou 100. Dans la cabine d'essayage, quand le solde est à zéro, le bouton devient <strong>Acheter des générations</strong>.</p>
+  <figure class="tela">
+    <img src="manuel/19-ajustes-assinatura.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Haut de Réglages avec l'abonnement Actif, le solde Il reste 20 générations ce mois-ci et Renouvellement le 12/10, les boutons Acheter des crédits, Gérer l'abonnement, Utiliser un code promo et Restaurer les achats, et en dessous les interrupteurs de Photos en pose et Confidentialité.">
+    <figcaption>La partie Abonnement, en haut de Réglages.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Utilisez un code promo</h4>
+  <p>Vous avez reçu un code promo&nbsp;? Dans <strong>Réglages</strong> ou sur l'écran <strong>Crédits</strong>, touchez <strong>Utiliser un code promo</strong>&nbsp;: une fenêtre de l'App Store s'ouvre, dans laquelle vous saisissez le code. Les crédits du code promo sont valables avec un abonnement actif ou pendant l'essai gratuit. Sans abonnement, ils sont mis en attente et s'ajoutent au solde dès que vous vous abonnez ou commencez l'essai gratuit.</p>
+</div>
+
+<div class="dicas">
+  <p>Bon à savoir sur les crédits</p>
+  <ul>
+    <li>L'achat de crédits nécessite un abonnement.</li>
+    <li>L'app utilise d'abord les générations du mois, puis les crédits.</li>
+    <li>Les crédits achetés n'expirent pas.</li>
+  </ul>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Nouvel iPhone&nbsp;?</h4>
+  <p>Dans <strong>Réglages</strong>, touchez <strong>Restaurer les achats</strong>. Utilisez le même compte Apple que pour l'achat.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">4</span>Modifiez ou résiliez</h4>
+  <p>Dans <strong>Réglages</strong>, touchez <strong>Gérer l'abonnement</strong>. Résiliez au moins 24 heures avant le renouvellement. En dehors de l'app&nbsp;: ouvrez Réglages sur l'iPhone, touchez votre nom, puis Abonnements.</p>
+</div>
+
+<!-- ============ BACKUP ============ -->
+<h2 id="backup">Sauvegarde</h2>
+
+<h3 class="tema">Garder une copie de la garde-robe</h3>
+
+<div class="passo">
+  <h4><span class="num">1</span>Pourquoi le faire</h4>
+  <p>La garde-robe reste uniquement sur votre iPhone. Si l'app est supprimée sans sauvegarde, les pièces, les photos et les looks sont perdus. L'abonnement, lui, n'est pas perdu.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">2</span>Faites la sauvegarde</h4>
+  <p>Dans <strong>Réglages</strong>, touchez <strong>Exporter la garde-robe</strong>. Quand «&nbsp;Fichier prêt&nbsp;» apparaît, touchez <strong>Envoyer le fichier</strong> et choisissez <strong>Enregistrer dans Fichiers</strong> ou AirDrop.</p>
+  <figure class="tela">
+    <img src="manuel/20-ajustes-backup.jpg" width="600" height="1303" loading="lazy" decoding="async" alt="Bas de Réglages&nbsp;: Mon contenu avec 5 pièces, 1 sur 4 photos du corps et 2 looks. Dans Sauvegarde et transfert, Exporter la garde-robe, Envoyer le fichier, Importer depuis un fichier et le message Fichier prêt. Ensuite, À propos, avec Politique de confidentialité et Assistance, puis le bouton Tout supprimer.">
+    <figcaption>Le fichier est prêt. Il ne reste plus qu'à toucher Envoyer le fichier.</figcaption>
+  </figure>
+</div>
+
+<div class="passo">
+  <h4><span class="num">3</span>Récupérez tout</h4>
+  <p>Dans <strong>Réglages</strong>, touchez <strong>Importer depuis un fichier</strong> et choisissez le fichier. <strong>Fusionner avec ce que j'ai déjà</strong> ajoute seulement ce qui manque. <strong>Tout remplacer</strong> efface ce qui se trouve sur l'appareil et le remplace par le contenu du fichier.</p>
+</div>
+
+<div class="passo">
+  <h4><span class="num">4</span>Tout supprimer</h4>
+  <p><strong>Tout supprimer</strong>, en bas de <strong>Réglages</strong>, retire les pièces, les photos, les looks et <strong>Mes infos</strong>. L'autorisation d'envoi à l'IA est aussi désactivée, et l'app vous redemande votre accord. L'abonnement et les crédits restent.</p>
+</div>
+
+<div class="dicas">
+  <p>Quand faire une sauvegarde</p>
+  <ul>
+    <li>De temps en temps, après avoir ajouté plusieurs pièces.</li>
+    <li>Toujours avant de changer d'iPhone.</li>
+  </ul>
+</div>
+
+<!-- ============ DICAS ============ -->
+<h2 id="dicas">Conseils pour de bonnes photos</h2>
+
+<div class="dicas">
+  <p>Vêtements</p>
+  <ul>
+    <li>Pièce claire sur fond foncé. Pièce foncée sur fond clair.</li>
+    <li>Lumière naturelle, sans ombre forte dessus.</li>
+    <li>Fond uni&nbsp;: drap, sol ou mur.</li>
+    <li>Pièce bien étalée et entière sur la photo, sans couper une manche ni l'ourlet.</li>
+    <li>Toujours les deux photos&nbsp;: devant et dos.</li>
+    <li>Dos nu, pièce ajourée ou qui ne tient pas seule&nbsp;: utilisez un mannequin et cochez <strong>Sur mannequin</strong>.</li>
+    <li>Chaussures&nbsp;: la paire ensemble, du dessus et un peu de face. Puis une chaussure de profil, pour montrer la hauteur du talon.</li>
+    <li>Vérifiez la couleur cochée. C'est elle qui guide les suggestions.</li>
+  </ul>
+</div>
+
+<div class="dicas">
+  <p>Corps</p>
+  <ul>
+    <li>En pied, de la tête aux pieds, avec le visage visible et bien éclairé.</li>
+    <li>Vêtements près du corps et clairs, fond simple.</li>
+    <li>Les 4 photos à la même distance et avec la même lumière.</li>
+    <li>Sur les photos en pose, tout le corps doit apparaître. Indiquez bien de quel côté vous êtes tournée, dans <strong>Orientation</strong>.</li>
+  </ul>
+</div>
+
+<!-- ============ PROBLEMAS ============ -->
+<h2 id="problemas">Problèmes fréquents</h2>
+
+<h3 class="pergunta">Pourquoi le bouton Essayer avec l'IA est-il grisé&nbsp;?</h3>
+<p>Il manque la photo de base, ou le look n'a pas de pièces. Ajoutez la photo <strong>De face</strong> dans <strong>Mon corps</strong>, ou touchez <strong>Modifier</strong> dans la cabine d'essayage et choisissez les pièces.</p>
+
+<h3 class="pergunta">Le message «&nbsp;Il manque votre photo du corps&nbsp;» apparaît. Que faire&nbsp;?</h3>
+<p>Dans l'onglet <strong>Mon corps</strong>, ajoutez au moins la photo <strong>De face</strong>.</p>
+
+<h3 class="pergunta">Le détourage est raté ou a rogné le vêtement. Que faire&nbsp;?</h3>
+<p>Reprenez la photo sur un fond dont la couleur contraste avec celle de la pièce. Ou désactivez <strong>Retirer le fond automatiquement</strong>, ou utilisez <strong>Gommer avec le doigt</strong>.</p>
+
+<h3 class="pergunta">Comment corriger le détourage d'une pièce déjà enregistrée&nbsp;?</h3>
+<p>Touchez la pièce, gardez le doigt dessus et choisissez <strong>Corriger le détourage de face</strong> ou <strong>Corriger le détourage de dos</strong>.</p>
+
+<h3 class="pergunta">Un mannequin ou un cintre apparaît sur le résultat. Comment l'enlever&nbsp;?</h3>
+<p>Dans <strong>Ajuster la demande</strong>, cochez <strong>Le mannequin apparaît</strong> et générez à nouveau. Vérifiez aussi que la pièce est bien réglée sur <strong>Sur mannequin</strong> ou <strong>Sur cintre</strong>, selon la photo.</p>
+
+<h3 class="pergunta">L'IA a changé mon visage ou mon corps. Que faire&nbsp;?</h3>
+<p>Remplissez <strong>Mes infos</strong>. Dans <strong>Ajuster la demande</strong>, cochez <strong>Mon visage a changé</strong> ou <strong>Mon corps a changé</strong>. Utilisez une photo avec le visage bien éclairé.</p>
+
+<h3 class="pergunta">Pourquoi le vêtement est-il porté devant derrière&nbsp;?</h3>
+<p>Ajoutez la photo de dos de la pièce et cochez <strong>Mis à l'envers</strong>. Sur une photo en pose, vérifiez <strong>Orientation</strong>.</p>
+
+<h3 class="pergunta">L'IA a changé le décor de ma photo en pose. Comment l'éviter&nbsp;?</h3>
+<p>Cochez <strong>Le décor a changé</strong>. Si le problème persiste, dans <strong>Réglages</strong>, désactivez <strong>Envoyer la photo neutre comme référence de mesures</strong>.</p>
+
+<h3 class="pergunta">Le message «&nbsp;Trop de générations en peu de temps&nbsp;» apparaît. Qu'est-ce que c'est&nbsp;?</h3>
+<p>Il y a une limite par heure. Attendez quelques minutes et réessayez.</p>
+
+<h3 class="pergunta">Un message d'erreur indique «&nbsp;La génération n'a pas été décomptée&nbsp;». Ai-je perdu la génération&nbsp;?</h3>
+<p>Non. Touchez à nouveau le bouton pour réessayer. Si l'erreur revient, envoyez le message à l'assistance, avec l'heure à laquelle c'est arrivé.</p>
+
+<h3 class="pergunta">Le message «&nbsp;Impossible de confirmer votre abonnement&nbsp;» apparaît. Que faire&nbsp;?</h3>
+<p>Dans <strong>Réglages</strong>, touchez <strong>Restaurer les achats</strong>.</p>
+
+<h3 class="pergunta">Pourquoi le bouton Suggérer des looks ne propose-t-il rien&nbsp;?</h3>
+<p>Avec moins de 2 pièces dans la garde-robe, le bouton est grisé. Avec 2 pièces ou plus, l'app a besoin d'un haut et d'un bas qui vont ensemble, ou d'une robe. Si les pièces ne vont pas ensemble (deux imprimés, deux couleurs vives ou des occasions très différentes, comme Sport et Travail), l'app ne suggère rien. Ajoutez d'autres pièces, de préférence dans des couleurs neutres, ou vérifiez <strong>Quand la porter</strong> sur chaque pièce.</p>
+
+<h3 class="pergunta">Pourquoi le + de l'onglet Looks est-il grisé&nbsp;?</h3>
+<p>Ajoutez au moins une pièce dans l'onglet <strong>Garde-robe</strong>.</p>
+
+<h3 class="pergunta">Le résultat précédent a disparu. Peut-on le récupérer&nbsp;?</h3>
+<p>Non. Chaque nouvelle génération remplace la précédente. Enregistrez les images réussies avec <strong>Partager</strong> puis <strong>Enregistrer l'image</strong>.</p>
+
+<h3 class="pergunta">J'ai changé d'iPhone. Comment tout récupérer&nbsp;?</h3>
+<p>Sur l'ancien iPhone, utilisez <strong>Exporter la garde-robe</strong>. Sur le nouveau, utilisez <strong>Importer depuis un fichier</strong>, puis <strong>Restaurer les achats</strong>.</p>
+
+<h3 class="pergunta">L'app fonctionne-t-elle sans Internet&nbsp;?</h3>
+<p>Oui, en grande partie. Seuls <strong>Essayer avec l'IA</strong> et les achats nécessitent une connexion Internet.</p>
+
+<!-- ============ PRIVACIDADE ============ -->
+<h2 id="privacidade">Confidentialité, en bref</h2>
+<ol>
+  <li>Vos photos, vos pièces et vos looks restent sur votre iPhone.</li>
+  <li>C'est seulement quand vous touchez <strong>Essayer avec l'IA</strong>, et après avoir accepté l'avertissement, que des données sont envoyées à l'IA Gemini de Google, en passant par le serveur de KR Provador&nbsp;: la photo de base, un recadrage du visage, les pièces avec leur nom et leur couleur, <strong>Mes infos</strong>, la pose, les corrections et votre remarque. Avec une photo en pose, la photo neutre de mesures est aussi envoyée, si cette option est activée. Google n'utilise pas ces données pour entraîner l'IA et les conserve jusqu'à 55 jours, uniquement pour prévenir les abus. Le serveur ne conserve aucune photo.</li>
+  <li>Vous pouvez désactiver l'envoi dans <strong>Réglages</strong>, avec l'interrupteur <strong>Autoriser l'envoi des photos à l'IA de Google</strong>.</li>
+</ol>
+<p>Tous les détails sont dans la <a href="en.html">Politique de confidentialité</a> (en anglais).</p>
+
+<!-- ============ CONTATO ============ -->
+<h2 id="contato">Contact</h2>
+<p>Encore une question&nbsp;? Écrivez à <a href="mailto:krprovador@gmail.com">krprovador@gmail.com</a>, en français si vous voulez. Indiquez quel iPhone vous utilisez et ce qui s'est passé.</p>
+<p>Voir aussi la page <a href="support.html">Assistance</a> et la <a href="en.html">Politique de confidentialité</a>, toutes deux en anglais. Dans l'app, elles se trouvent dans <strong>Réglages</strong>, dans la partie <strong>À propos</strong>.</p>
+
+<footer>
+  KR Provador. Développé par Robson Raul. <a href="support.html">Assistance (en anglais)</a> &nbsp;·&nbsp; <a href="en.html">Politique de confidentialité (en anglais)</a>.
+</footer>
+
+</main>
+</body>
+</html>
